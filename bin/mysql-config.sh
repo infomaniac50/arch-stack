@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo "I am going to setup MySQL for you."
+echo "The script may pause for a moment while it is running."
+echo "This is normal and no keys need to be pressed."
+echo "Press [ENTER] to continue..."
+read ANSWER
+
 /usr/bin/expect << SECUREMYSQL
 
 spawn mysql_secure_installation
